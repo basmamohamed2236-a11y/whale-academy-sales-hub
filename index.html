@@ -38,7 +38,7 @@
 </section>
 <div class="group-title" id="sales">المبيعات والعروض</div>
 <section class="grid">
-<article class="card" data-search="offers payment plans الأسعار التقسيط سعر pricing guide"><div class="card-head"><div><h3>Offers &amp; Payment Plans</h3><p>دليل الأسعار والأوفرات المرسل. تأكدي من اعتماد النسخة الحالية قبل استخدامها.</p></div><span class="icon">🟠</span></div><details><summary>عرض دليل الأسعار</summary><img class="offer" src="sales-pricing-guide.png" alt="دليل الأسعار والأوفرات المرسل من الفريق"></details></article>
+<article class="card" data-search="offers payment plans الأسعار التقسيط سعر pricing guide"><div class="card-head"><div><h3>Offers &amp; Payment Plans</h3><p>دليل الأسعار والأوفرات المرسل. تأكدي من اعتماد النسخة الحالية قبل استخدامها.</p></div><span class="icon">🟠</span></div><details><summary>عرض دليل الأسعار</summary><img class="offer" src="sales-pricing-guide.jpg" alt="دليل الأسعار والأوفرات المرسل من الفريق"></details></article>
 <article class="card" data-search="sales scripts call flow التسجيل بعد الحجز واتساب scripts"><div class="card-head"><div><h3>Sales Scripts &amp; Call Flow</h3><p>ملخص بيانات استكمال التسجيل بعد الحجز.</p></div><span class="icon">☎️</span></div><details><summary>عرض رسالة استكمال التسجيل</summary><div class="message"><b>البيانات المطلوبة:</b> الاسم بالكامل بالإنجليزية، رقم الموبايل الأساسي، رقم إضافي إن وجد، البريد الإلكتروني، المحافظة، المهنة الحالية، نظام الحضور، الجروب وموعد البداية، والرقم القومي.</div></details></article>
 <article class="card" data-search="training materials certificate شهادة التدريب"><div class="card-head"><div><h3>Training Materials</h3><p>مواد التدريب والشهادات.</p></div><span class="icon">📘</span></div><div class="card-footer"><span class="pending">بانتظار نسخة شهادة بدون بيانات شخصية</span></div></article>
 </section>
@@ -55,4 +55,5 @@
 const input=document.getElementById('search');const cards=[...document.querySelectorAll('.card')];const empty=document.getElementById('empty');input.addEventListener('input',()=>{const q=input.value.trim().toLocaleLowerCase();let shown=0;for(const card of cards){const hay=(card.innerText+' '+(card.dataset.search||'')).toLocaleLowerCase();const match=hay.includes(q);card.classList.toggle('hidden',!match);if(match)shown++}empty.style.display=shown?'none':'block'});document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>{document.querySelectorAll('.nav a').forEach(x=>x.classList.remove('active'));a.classList.add('active')}));
 </script>
 </body></html>
+
 
